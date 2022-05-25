@@ -1,14 +1,15 @@
-"use strict";
-// let arr = [];
-// arr[0]=prompt('Имя', ''); //str
-// arr[1]=prompt('Фамилия', ''); //str
-// arr[2]=+prompt('Возраст', ''); //number
-// console.log(arr);
-// console.log(typeof(arr));
-let ini = 10,
-    dci = 10;
-console.log(ini++);
-console.log(dci--);
-console.log(ini);
-console.log(dci);
- 
+let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
+let a = prompt('Один из послених просмотренных фильмов?', ''),
+    b = prompt('На сколько оцените его?', ''),
+    c = prompt('Один из послених просмотренных фильмов?', ''),
+    d = prompt('На сколько оцените его?', '');
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
